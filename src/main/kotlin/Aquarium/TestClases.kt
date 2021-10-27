@@ -28,6 +28,7 @@ class InitOrderDemo(name: String) {
 }
 
 class Customer(name: String) {
+    @OptIn(ExperimentalStdlibApi::class)
     val customerKey = name.uppercase()
 
     init {
